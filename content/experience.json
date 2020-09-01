@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Software Developer Intern",
+    "company": "Arterys",
+    "location": "Calgary, AB, CA",
+    "start": "2018-01-01T07:00:00.000Z",
+    "end": "2018-04-30T06:00:00.000Z",
+    "link": "https://arterys.com/",
+    "duties": [
+      "Participated in an Agile workflow as part of the Oncology product and Front-end architecture teams",
+      "Developed features and fixed bugs in the Arterys MICA platform, a SaaS product",
+      "Developed unit and integration tests for new features and bug fixes",
+      "Assisted in the transition from Angular.js to Vue.js by replacing Browserify with Webpack, migrating Angular.js directives to Vue components, and presenting an introduction to Vuex to developers",
+      "Reviewed and tested code for new features to ensure code and product quality was maintained",
+      "Mentored new interns, passing on knowledge to get them up to speed effectively"
+    ]
+  },
+  {
+    "title": "Network Sustainment Intern",
+    "company": "Shaw Communications",
+    "location": "Calgary, AB, CA",
+    "start": "2018-05-01T07:00:00.000Z",
+    "end": "2019-07-31T06:00:00.000Z",
+    "link": "https://www.shaw.ca/",
+    "duties": [
+      "Developed and tested front-end and back-end of a web app used to monitory the Shaw cable plant",
+      "Improved performance of cable modem data collection by parallelizing the collection process",
+      "Simplified interface by introducing an interactive map giving an overview of cities, hubsites, and nodes",
+      "Updated and created SQL Server stored procedures to accommodate new features"
+    ]
+  }
+]
