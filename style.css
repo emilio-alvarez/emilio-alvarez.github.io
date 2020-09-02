@@ -5,3 +5,29 @@
 .footer__icon {
   width: 2em;
 }
+
+.position {
+  border-left-style: solid;
+  border-left-width: 8px;
+  padding: 0 1em 0 1em;
+}
+
+.position__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.position__company {
+  font-weight: bold;
+}
+
+.position__duties {
+  margin-top: 0.5em;
+  padding-left: 1.2em;
+}
+
+.link--invisible,
+.link--invisible:hover {
+  text-decoration: inherit;
+  color: inherit;
+}
