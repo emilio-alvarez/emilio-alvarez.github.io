@@ -1,11 +1,22 @@
 [
   {
-    "name": "Twijj"
+    "name": "Twijj",
+    "shortDescription": "Video Live Streaming Service",
+    "thumbnail": "imagelocation",
+    "github": "https://github.com/emilio-alvarez/Twijj",
+    "tags": ["university", "javascript", "react", "redux", "firebase", "aws"]
   },
   {
-    "name": "Shuttr"
+    "name": "Shuttr",
+    "shortDescription": "Photography Social Network Concept",
+    "thumbnail": "imagelocation",
+    "github": "https://github.com/emilio-alvarez/shuttr",
+    "tags": ["university", "c#", ".net wpf"]
   },
   {
-    "name": "Tech Retailer"
+    "name": "Tech Retailer",
+    "shortDescription": "Simple Retailer Website",
+    "thumbnail": "imagelocation",
+    "tags": ["university", "php", "mysql"]
   }
 ]
