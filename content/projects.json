@@ -12,11 +12,5 @@
     "thumbnail": "imagelocation",
     "github": "https://github.com/emilio-alvarez/shuttr",
     "tags": ["university", "c#", ".net wpf"]
-  },
-  {
-    "name": "Tech Retailer",
-    "shortDescription": "Simple Retailer Website",
-    "thumbnail": "imagelocation",
-    "tags": ["university", "php", "mysql"]
   }
 ]
