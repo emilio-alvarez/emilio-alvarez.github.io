@@ -55,9 +55,30 @@ function populateProjects(projects) {
           </div>
           <div class="project__name"><%= project.name %></div>
           <div class="project__shortDescription"><%= project.shortDescription %></div>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-<%= project.name %>">Open</button>
         </div>
       </div>
       <% } %>
+    </div>
+    <div>
+    <% for (project of projects) { %>
+      <div class="modal fade" id="modal-<%= project.name %>" tabindex="-1" aria-labelledby="modal-<%= project.name %>-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-<%= project.name %>-label"><%= project.name %></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">Hello</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% } %>
     </div>`,
     { projects }
   );
