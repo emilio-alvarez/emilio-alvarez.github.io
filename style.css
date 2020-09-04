@@ -31,3 +31,27 @@
   text-decoration: inherit;
   color: inherit;
 }
+
+.project {
+  padding: 1em;
+}
+
+.project__content {
+  background-color: lightsalmon;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project__thumbnail {
+  max-width: 100%;
+  max-height: 150px;
+}
+
+.project__thumbnailContainer {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}

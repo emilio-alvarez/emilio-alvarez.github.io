@@ -46,15 +46,19 @@ function populateExperience(experience) {
 function populateProjects(projects) {
   let html = ejs.render(
     `
-    <% for (project of projects) { %>
-    <div class="project">
-      <div class="project__name"><%= project.name %></div>
-      <div class="project__shortDescription"><%= project.shortDescription %></div>
-      <% if (project.github) { %>
-      <a href="<%= project.github %>" class="project__github">Source code</a>
+    <div class="row row-cols-3">
+      <% for (project of projects) { %>
+      <div class="project">
+        <div class="project__content">
+          <div class="project__thumbnailContainer">
+            <img class="project__thumbnail" src="<%= project.thumbnail %>" alt="<%= project.name %> Project Thumbnail" />
+          </div>
+          <div class="project__name"><%= project.name %></div>
+          <div class="project__shortDescription"><%= project.shortDescription %></div>
+        </div>
+      </div>
       <% } %>
-    </div>
-    <% } %>`,
+    </div>`,
     { projects }
   );
   $("#projects-container").html(html);

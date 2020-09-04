@@ -2,14 +2,14 @@
   {
     "name": "Twijj",
     "shortDescription": "Video Live Streaming Service",
-    "thumbnail": "imagelocation",
+    "thumbnail": "content/screenshots/twijj/twijj-logo.png",
     "github": "https://github.com/emilio-alvarez/Twijj",
     "tags": ["university", "javascript", "react", "redux", "firebase", "aws"]
   },
   {
     "name": "Shuttr",
     "shortDescription": "Photography Social Network Concept",
-    "thumbnail": "imagelocation",
+    "thumbnail": "content/screenshots/shuttr/shuttr-logo.png",
     "github": "https://github.com/emilio-alvarez/shuttr",
     "tags": ["university", "c#", ".net wpf"]
   }
