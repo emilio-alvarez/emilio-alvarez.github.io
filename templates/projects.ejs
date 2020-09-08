@@ -19,12 +19,18 @@
     <div class="modal-dialog modal-dialog-scrollable modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modal-<%= project.name %>-label"><%= project.name %></h5>
+          <h4 class="modal-title" id="modal-<%= project.name %>-label"><%= project.name %></h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
+          <h5 class="project__catchphrase">
+            <%= project.shortDescription %>
+          </h5>
+          <% for (paragraph of project.longDescription) { %>
+          <p><%= paragraph %></p>
+          <% } %>
           <div id="<%= project.name %>-carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <% for (let i=0; i<project.screenshotCount; i++) { %>
@@ -47,19 +53,11 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <div class="project__catchphrase">
-            <%= project.shortDescription %>
-          </div>
-          <ul class="project__description">
-            <% for (paragraph of project.longDescription) { %>
-            <li><%= paragraph %></li>
-            <% } %>
-          </ul>
-          <a class="project__github" href="<%= project.github %>">
-            <img src="assets/icons/github-square.svg" alt="GitHub Logo"/>
-          </a>
         </div>
         <div class="modal-footer">
+          <a class="mr-auto" href="<%= project.github %>">
+            <img src="assets/icons/github.svg" alt="GitHub Logo" class="footer__icon"/>
+          </a>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
