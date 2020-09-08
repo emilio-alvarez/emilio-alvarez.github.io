@@ -51,7 +51,7 @@ function populateProjects(projects) {
       <div class="project">
         <a class="project__content" data-toggle="modal" data-target="#modal-<%= project.name %>">
           <div class="project__thumbnailContainer">
-            <img class="project__thumbnail" src="content/screenshots/<%= project.screenshotFolder %>/<%= project.thumbnail %>" alt="<%= project.name %> Project Thumbnail" />
+            <img class="project__thumbnail" src="content/screenshots/<%= project.name %>/<%= project.thumbnail %>" alt="<%= project.name %> Project Thumbnail" />
           </div>
           <div class="project__name"><%= project.name %></div>
           <div class="project__overlay">
@@ -82,7 +82,7 @@ function populateProjects(projects) {
                 <div class="carousel-inner">
                   <% for (let i=0; i<project.screenshotCount; i++) { %>
                   <div class="carousel-item <% if (i === 0) { %> active <% } %>">
-                    <img src="content/screenshots/<%= project.screenshotFolder %>/<%= i %>.png" class="d-block w-100" alt="<%= project.name %> Screenshot <%= i %>"/>
+                    <img src="content/screenshots/<%= project.name %>/<%= i %>.png" class="d-block w-100" alt="<%= project.name %> Screenshot <%= i %>"/>
                   </div>
                   <% } %>
                 </div>

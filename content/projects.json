@@ -2,7 +2,6 @@
   {
     "name": "Twijj",
     "shortDescription": "Video Live Streaming Service",
-    "screenshotFolder": "twijj",
     "screenshotCount": 5,
     "thumbnail": "twijj-logo.png",
     "github": "https://github.com/emilio-alvarez/Twijj",
@@ -11,7 +10,6 @@
   {
     "name": "Shuttr",
     "shortDescription": "Photography Social Network Concept",
-    "screenshotFolder": "shuttr",
     "screenshotCount": 6,
     "thumbnail": "shuttr-logo.png",
     "github": "https://github.com/emilio-alvarez/shuttr",
