@@ -49,21 +49,22 @@ function populateProjects(projects) {
     <div class="row row-cols-3">
       <% for (project of projects) { %>
       <div class="project">
-        <div class="project__content">
+        <a class="project__content" data-toggle="modal" data-target="#modal-<%= project.name %>">
           <div class="project__thumbnailContainer">
-            <img class="project__thumbnail" src="<%= project.thumbnail %>" alt="<%= project.name %> Project Thumbnail" />
+            <img class="project__thumbnail" src="content/screenshots/<%= project.screenshotFolder %>/<%= project.thumbnail %>" alt="<%= project.name %> Project Thumbnail" />
           </div>
           <div class="project__name"><%= project.name %></div>
-          <div class="project__shortDescription"><%= project.shortDescription %></div>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-<%= project.name %>">Open</button>
-        </div>
+          <div class="project__overlay">
+            <span><%= project.shortDescription %></span>
+          </div>
+        </a>
       </div>
       <% } %>
     </div>
     <div>
     <% for (project of projects) { %>
       <div class="modal fade" id="modal-<%= project.name %>" tabindex="-1" aria-labelledby="modal-<%= project.name %>-label" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="modal-<%= project.name %>-label"><%= project.name %></h5>
@@ -71,7 +72,30 @@ function populateProjects(projects) {
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">Hello</div>
+            <div class="modal-body">
+              <div id="<%= project.name %>-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <% for (let i=0; i<project.screenshotCount; i++) { %>
+                  <li data-target="#<%= project.name %>-carousel" data-slide-to="<%= i %>" <% if (i === 0) { %> class="active" <% } %>></li>
+                  <% } %>
+                </ol>
+                <div class="carousel-inner">
+                  <% for (let i=0; i<project.screenshotCount; i++) { %>
+                  <div class="carousel-item <% if (i === 0) { %> active <% } %>">
+                    <img src="content/screenshots/<%= project.screenshotFolder %>/<%= i %>.png" class="d-block w-100" alt="<%= project.name %> Screenshot <%= i %>"/>
+                  </div>
+                  <% } %>
+                </div>
+                <a class="carousel-control-prev" href="#<%= project.name %>-carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#<%= project.name %>-carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>

@@ -43,6 +43,18 @@
   align-items: center;
   flex-direction: column;
   height: 100%;
+  color: inherit;
+  position: relative;
+}
+
+.project__content:hover {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.project__content:hover .project__overlay {
+  opacity: 0.5;
 }
 
 .project__thumbnail {
@@ -54,4 +66,17 @@
   flex-grow: 1;
   display: flex;
   align-items: center;
+}
+
+.project__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: limegreen;
 }
