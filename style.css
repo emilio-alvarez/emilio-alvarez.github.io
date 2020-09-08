@@ -32,6 +32,10 @@
   color: inherit;
 }
 
+.link--newtab:hover:after {
+  content: " in a new tab!";
+}
+
 .project {
   padding: 1em;
 }
