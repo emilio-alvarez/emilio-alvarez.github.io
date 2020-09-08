@@ -51,7 +51,7 @@ function populateProjects(projects) {
       <div class="project">
         <a class="project__content" data-toggle="modal" data-target="#modal-<%= project.name %>">
           <div class="project__thumbnailContainer">
-            <img class="project__thumbnail" src="content/screenshots/<%= project.name %>/<%= project.thumbnail %>" alt="<%= project.name %> Project Thumbnail" />
+            <img class="project__thumbnail" src="assets/thumbnails/<%= project.thumbnail %>" alt="<%= project.name %> Project Thumbnail" />
           </div>
           <div class="project__name"><%= project.name %></div>
           <div class="project__overlay">
@@ -95,6 +95,17 @@ function populateProjects(projects) {
                   <span class="sr-only">Next</span>
                 </a>
               </div>
+              <div class="project__catchphrase">
+                <%= project.shortDescription %>
+              </div>
+              <ul class="project__description">
+                <% for (paragraph of project.longDescription) { %>
+                <li><%= paragraph %></li>
+                <% } %>
+              </ul>
+              <a class="project__github" href="<%= project.github %>">
+                <img src="assets/icons/github-square.svg" alt="GitHub Logo"/>
+              </a>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

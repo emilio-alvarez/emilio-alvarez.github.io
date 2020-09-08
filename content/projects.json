@@ -2,6 +2,11 @@
   {
     "name": "Twijj",
     "shortDescription": "Video Live Streaming Service",
+    "longDescription": [
+      "Twijj is a web platform that allows users to live stream and share content with any number of other viewers online.",
+      "Along with streaming or viewing streams, users can also interact with each other through a live chat in each stream, and communicate with the stream host.",
+      "Twijj was developed in a group as part of the SENG 513 course at the University of Calgary."
+    ],
     "screenshotCount": 5,
     "thumbnail": "twijj-logo.png",
     "github": "https://github.com/emilio-alvarez/Twijj",
@@ -10,6 +15,11 @@
   {
     "name": "Shuttr",
     "shortDescription": "Photography Social Network Concept",
+    "longDescription": [
+      "Shuttr is an interface concept for a photography social network, allowing users to share and discuss photography.",
+      "Users can upload photos, browse photos from other users, and create or participate in discussion posts.",
+      "Shuttr was designed in a group as part of the CPSC 481 course at the University of Calgary."
+    ],
     "screenshotCount": 6,
     "thumbnail": "shuttr-logo.png",
     "github": "https://github.com/emilio-alvarez/shuttr",
