@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Bachelor of Science in Computer Science",
+    "school": "University of Calgary",
+    "location": "Calgary, AB, CA",
+    "dateString": "2014 - 2020",
+    "link": "https://www.ucalgary.ca/",
+    "details": [
+      "Internship Program + Software Engineering Concentration",
+      "Graduated with Distinction; 3.47/4.00 GPA (3.97 over last 10 courses)",
+      "Faculty of Science Dean's List (2017)",
+      "Jason Lang Scholarship (2017)"
+    ],
+    "color": "#d6001c"
+  },
+  {
+    "title": "Minor in Economics",
+    "school": "University of Calgary",
+    "location": "Calgary, AB, CA",
+    "dateString": "2014 - 2020",
+    "link": "https://www.ucalgary.ca/",
+    "color": "#d6001c"
+  }
+]

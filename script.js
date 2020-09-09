@@ -1,4 +1,5 @@
 const experienceJSON = "content/experience.json";
+const educationJSON = "content/education.json";
 const projectsJSON = "content/projects.json";
 
 $(document).ready(function () {
@@ -6,6 +7,12 @@ $(document).ready(function () {
   $.getJSON(experienceJSON, (experience) => {
     if (Array.isArray(experience)) {
       populateExperience(experience);
+    }
+  });
+
+  $.getJSON(educationJSON, (education) => {
+    if (Array.isArray(education)) {
+      populateEducation(education);
     }
   });
 
@@ -20,6 +27,13 @@ function populateExperience(experience) {
   $.get("templates/experience.ejs", function (template) {
     let html = ejs.render(template, { experience });
     $("#experience-container").html(html);
+  });
+}
+
+function populateEducation(experience) {
+  $.get("templates/experience.ejs", function (template) {
+    let html = ejs.render(template, { experience });
+    $("#education-container").html(html);
   });
 }
 

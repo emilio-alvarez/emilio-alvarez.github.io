@@ -5,7 +5,7 @@
     "location": "Calgary, AB, CA",
     "dateString": "May 2018 - July 2019",
     "link": "https://arterys.com/",
-    "duties": [
+    "details": [
       "Participated in an Agile workflow as part of the Oncology product and Front-end architecture teams.",
       "Developed features and fixed bugs in the Arterys MICA platform, a SaaS product.",
       "Developed unit and integration tests for new features and bug fixes.",
@@ -21,7 +21,7 @@
     "location": "Calgary, AB, CA",
     "dateString": "January 2018 - April 2018",
     "link": "https://www.shaw.ca/",
-    "duties": [
+    "details": [
       "Developed and tested front-end and back-end of a web app used to monitory the Shaw cable plant.",
       "Improved performance of cable modem data collection by parallelizing the collection process.",
       "Simplified interface by introducing an interactive map giving an overview of cities, hubsites, and nodes.",
