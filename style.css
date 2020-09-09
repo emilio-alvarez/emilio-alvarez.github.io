@@ -26,6 +26,10 @@
   width: 2em;
 }
 
+.footer__icon--tall {
+  height: 2.05em;
+}
+
 .position {
   border-left-style: solid;
   border-left-width: 8px;

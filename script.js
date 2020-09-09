@@ -23,6 +23,8 @@ $(document).ready(function () {
 
     populateElement("#projects-container", projectsTemplate, projectsJSON);
   });
+
+  $('[data-toggle="tooltip"]').tooltip();
 });
 
 function populateElement(elementId, template, dataJSON) {
