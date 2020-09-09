@@ -3,43 +3,32 @@ const educationJSON = "content/education.json";
 const projectsJSON = "content/projects.json";
 
 $(document).ready(function () {
-  // Load projects.json
-  $.getJSON(experienceJSON, (experience) => {
-    if (Array.isArray(experience)) {
-      populateExperience(experience);
-    }
+  // Load templates, then data
+  let experienceTemplate;
+  let projectsTemplate;
+
+  $.get("templates/experience.ejs", function (template) {
+    experienceTemplate = ejs.compile(template, { client: true });
+
+    populateElement(
+      "#experience-container",
+      experienceTemplate,
+      experienceJSON
+    );
+    populateElement("#education-container", experienceTemplate, educationJSON);
   });
 
-  $.getJSON(educationJSON, (education) => {
-    if (Array.isArray(education)) {
-      populateEducation(education);
-    }
-  });
+  $.get("templates/projects.ejs", function (template) {
+    projectsTemplate = ejs.compile(template, { client: true });
 
-  $.getJSON(projectsJSON, (projects) => {
-    if (Array.isArray(projects)) {
-      populateProjects(projects);
-    }
+    populateElement("#projects-container", projectsTemplate, projectsJSON);
   });
 });
 
-function populateExperience(experience) {
-  $.get("templates/experience.ejs", function (template) {
-    let html = ejs.render(template, { experience });
-    $("#experience-container").html(html);
-  });
-}
+function populateElement(elementId, template, dataJSON) {
+  $.getJSON(dataJSON, function (data) {
+    let html = template({ data });
 
-function populateEducation(experience) {
-  $.get("templates/experience.ejs", function (template) {
-    let html = ejs.render(template, { experience });
-    $("#education-container").html(html);
-  });
-}
-
-function populateProjects(projects) {
-  $.get("templates/projects.ejs", function (template) {
-    let html = ejs.render(template, { projects });
-    $("#projects-container").html(html);
+    $(elementId).html(html);
   });
 }

@@ -1,5 +1,5 @@
 <div class="row row-cols-3">
-  <% for (project of projects) { %>
+  <% for (project of data) { %>
   <div class="project">
     <a class="project__content" data-toggle="modal" data-target="#modal-<%= project.name %>">
       <div class="project__thumbnailContainer">
@@ -14,7 +14,7 @@
   <% } %>
 </div>
 <div>
-<% for (project of projects) { %>
+<% for (project of data) { %>
   <div class="modal fade" id="modal-<%= project.name %>" tabindex="-1" aria-labelledby="modal-<%= project.name %>-label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-xl">
       <div class="modal-content">
