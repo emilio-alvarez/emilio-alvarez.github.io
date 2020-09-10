@@ -1,33 +1,22 @@
 .intro {
-  height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
+  padding: 1em;
 }
 
 .intro__picture {
-  height: 200px;
+  height: 180px;
 }
 
 .intro__arrow {
+  display: none;
   position: absolute;
   bottom: 0;
   width: 3em;
-}
-
-.footer {
-  background-color: blueviolet;
-}
-
-.footer__icon {
-  width: 2em;
-}
-
-.footer__icon--tall {
-  height: 2.05em;
 }
 
 .position {
@@ -48,16 +37,6 @@
 .position__details {
   margin-top: 0.5em;
   padding-left: 1.2em;
-}
-
-.link--invisible,
-.link--invisible:hover {
-  text-decoration: inherit;
-  color: inherit;
-}
-
-.link--newtab:hover:after {
-  content: " in a new tab!";
 }
 
 .project {
@@ -108,4 +87,52 @@
   transition: 0.5s ease;
   background-color: limegreen;
   padding: 1em;
+}
+
+.footer {
+  background-color: blueviolet;
+}
+
+.icon {
+  width: 2em;
+}
+
+.icon--tall {
+  height: 2.05em;
+}
+
+.link--invisible,
+.link--invisible:hover {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.link--newtab:hover:after {
+  content: " in a new tab!";
+}
+
+/* Desktop Specific */
+@media (min-width: 992px) {
+  #headerNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  .intro {
+    height: 100vh;
+  }
+
+  .intro__arrow {
+    display: block;
+  }
+
+  .offset:before {
+    content: "";
+    display: block;
+    height: 3.25em;
+    margin-top: -3.25em;
+  }
 }
