@@ -28,10 +28,15 @@
 .position__header {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .position__company {
   font-weight: bold;
+}
+
+.position__location {
+  display: none;
 }
 
 .position__details {
@@ -126,6 +131,19 @@
 
 /* Tablets */
 @media (min-width: 768px) {
+  .position__header {
+    flex-direction: row;
+  }
+
+  .position__location {
+    display: block;
+    text-align: right;
+  }
+
+  .position__date {
+    text-align: right;
+  }
+
   .card-container > * {
     flex: 0 0 50%;
     max-width: 50%;

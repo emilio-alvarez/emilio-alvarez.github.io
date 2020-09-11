@@ -1,14 +1,16 @@
 <% for (position of data) { %>
 <div class="position" style="border-left-color: <%= position.color %>">
   <div class="position__header">
-    <a href="<%= position.link %>" class="position__company link--invisible">
-      <%= position.company || position.school %>
-    </a>
-    <span class="position__location"><%= position.location %></span>
-  </div>
-  <div class="position__header">
-    <div class="position__title"><%= position.title %></div>
-    <div class="position__date"><%= position.dateString %></div>
+    <div>
+      <a href="<%= position.link %>" class="position__company link--invisible">
+        <%= position.company || position.school %>
+      </a>
+      <div class="position__title"><%= position.title %></div>
+    </div>
+    <div>
+      <div class="position__location"><%= position.location %></div>
+      <div class="position__date"><%= position.dateString %></div>
+    </div>
   </div>
   <ul class="position__details">
     <% if (position.details) { %> <% for (duty of position.details) { %>
