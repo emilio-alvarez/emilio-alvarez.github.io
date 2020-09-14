@@ -57,6 +57,7 @@
   height: 100%;
   color: inherit;
   position: relative;
+  border-radius: 5px;
 }
 
 .project__content:hover {
@@ -71,6 +72,8 @@
 
 .project__thumbnail {
   max-width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .project__thumbnailContainer {
@@ -91,6 +94,7 @@
   transition: 0.5s ease;
   background-color: limegreen;
   padding: 1em;
+  border-radius: 5px;
 }
 
 .project__name {
