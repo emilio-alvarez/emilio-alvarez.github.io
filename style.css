@@ -154,6 +154,15 @@
   width: 100%;
 }
 
+.gray-section {
+  background: #f7f7f7;
+}
+
+section .container {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
 /* Tablets */
 @media (min-width: 768px) {
   .position__header {
