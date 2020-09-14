@@ -1,3 +1,9 @@
+:root {
+  --custom-primary: #4c3ddb;
+  --custom-primary-dark: #383a6b;
+  --custom-primary-light: #7350f2;
+}
+
 .intro {
   width: 100%;
   display: flex;
@@ -47,10 +53,11 @@
 .project {
   padding: 1em;
   height: 230px;
+  color: white;
 }
 
 .project__content {
-  background-color: lightsalmon;
+  background-color: var(--custom-primary);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -92,7 +99,7 @@
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: limegreen;
+  background-color: var(--custom-primary-light);
   padding: 1em;
   border-radius: 5px;
 }
@@ -102,7 +109,8 @@
 }
 
 .footer {
-  background-color: blueviolet;
+  background-color: var(--custom-primary-dark);
+  color: white;
 }
 
 .icon {
@@ -113,9 +121,22 @@
   height: 2.05em;
 }
 
+.icon--white {
+  filter: invert(100%);
+}
+
 .link--invisible,
 .link--invisible:hover {
   text-decoration: inherit;
+  color: inherit;
+}
+
+.link--hoverable {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.link--hoverable:hover {
   color: inherit;
 }
 
