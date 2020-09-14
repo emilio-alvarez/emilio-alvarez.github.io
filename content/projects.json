@@ -8,7 +8,7 @@
       "Twijj was developed in a group as part of the SENG 513 course at the University of Calgary."
     ],
     "screenshotCount": 5,
-    "thumbnail": "twijj-logo.png",
+    "thumbnail": "1.png",
     "github": "https://github.com/emilio-alvarez/Twijj",
     "tags": ["university", "javascript", "react", "redux", "firebase", "aws"]
   },
@@ -21,7 +21,7 @@
       "Shuttr was designed in a group as part of the CPSC 481 course at the University of Calgary."
     ],
     "screenshotCount": 6,
-    "thumbnail": "shuttr-logo.png",
+    "thumbnail": "0.png",
     "github": "https://github.com/emilio-alvarez/shuttr",
     "tags": ["university", "c#", ".net wpf"]
   }
