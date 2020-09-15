@@ -3,7 +3,11 @@
   <div class="project">
     <a class="project__content" data-toggle="modal" data-target="#modal-<%= project.name %>">
       <div class="project__thumbnailContainer">
-        <img class="project__thumbnail" src="content/screenshots/<%= project.name %>/<%= project.thumbnail %>" alt="<%= project.name %> Project Thumbnail" />
+        <picture>
+          <source srcset="content/screenshots/<%= project.name %>/<%= project.thumbnail %>.webp" type="image/webp"/>
+          <source srcset="content/screenshots/<%= project.name %>/<%= project.thumbnail %>.png" type="image/png"/>
+          <img src="content/screenshots/<%= project.name %>/<%= project.thumbnail %>.png" class="project__thumbnail" alt="<%= project.name %> Project Thumbnail"/>
+        </picture>
       </div>
       <div class="project__name"><%= project.name %></div>
       <div class="project__overlay text-center">
@@ -40,7 +44,11 @@
             <div class="carousel-inner">
               <% for (let i=0; i<project.screenshotCount; i++) { %>
               <div class="carousel-item <% if (i === 0) { %> active <% } %>">
-                <img src="content/screenshots/<%= project.name %>/<%= i %>.png" class="d-block w-100" alt="<%= project.name %> Screenshot <%= i %>"/>
+                <picture>
+                  <source srcset="content/screenshots/<%= project.name %>/<%= i %>.webp"/>
+                  <source srcset="content/screenshots/<%= project.name %>/<%= i %>.png"/>
+                  <img src="content/screenshots/<%= project.name %>/<%= i %>.png" class="d-block w-100" alt="<%= project.name %> Screenshot <%= i %>"/>
+                </picture>
               </div>
               <% } %>
             </div>
