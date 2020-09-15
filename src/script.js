@@ -1,13 +1,13 @@
-const experienceJSON = "content/experience.json";
-const educationJSON = "content/education.json";
-const projectsJSON = "content/projects.json";
+const experienceJSON = "/content/data/experience.json";
+const educationJSON = "/content/data/education.json";
+const projectsJSON = "/content/data/projects.json";
 
 $(document).ready(function () {
   // Load templates, then data
   let experienceTemplate;
   let projectsTemplate;
 
-  $.get("templates/experience.ejs", function (template) {
+  $.get("/templates/experience.ejs", function (template) {
     experienceTemplate = ejs.compile(template, { client: true });
 
     populateElement(
@@ -18,7 +18,7 @@ $(document).ready(function () {
     populateElement("#education-container", experienceTemplate, educationJSON);
   });
 
-  $.get("templates/projects.ejs", function (template) {
+  $.get("/templates/projects.ejs", function (template) {
     projectsTemplate = ejs.compile(template, { client: true });
 
     populateElement("#projects-container", projectsTemplate, projectsJSON);
