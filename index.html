@@ -54,11 +54,15 @@
     </nav>
 
     <div id="home" class="intro">
-      <img
-        src="content/images/face.jpg"
-        alt="My Profile Picture"
-        class="rounded-circle intro__picture"
-      />
+      <picture>
+        <source srcset="content/images/face.webp" />
+        <source srcset="content/images/face.jpg" />
+        <img
+          src="content/images/face.jpg"
+          alt="My Profile Picture"
+          class="rounded-circle intro__picture"
+        />
+      </picture>
       <h1 class="text-center">Emilio Alvarez Veronesi</h1>
       <h2 class="text-center intro__title">Software Developer</h2>
       <p class="text-center">
