@@ -18,11 +18,20 @@
   height: 180px;
 }
 
+.intro__title {
+  margin: 0 0 16px;
+}
+
 .intro__arrow {
   display: none;
   position: absolute;
   bottom: 0;
   width: 3em;
+}
+
+.section__header {
+  font-size: 34px;
+  margin: 0 0 16px;
 }
 
 .position {
@@ -39,6 +48,7 @@
 
 .position__company {
   font-weight: bold;
+  font-size: 17px;
 }
 
 .position__location {
@@ -106,6 +116,7 @@
 
 .project__name {
   padding: 0.5em;
+  font-size: 17px;
 }
 
 .footer {
