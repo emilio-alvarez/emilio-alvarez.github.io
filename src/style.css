@@ -151,10 +151,6 @@
   color: inherit;
 }
 
-.link--newtab:hover:after {
-  content: " in a new tab!";
-}
-
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -223,5 +219,9 @@ section .container {
   .card-container > * {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
+  }
+
+  .link--newtab:hover:after {
+    content: " in a new tab!";
   }
 }
