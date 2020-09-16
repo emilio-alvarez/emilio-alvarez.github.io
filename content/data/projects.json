@@ -37,5 +37,19 @@
     "thumbnail": "0",
     "github": "https://github.com/emilio-alvarez/SimpleChatApp",
     "tags": ["university", "javascript", "node"]
+  },
+  {
+    "name": "ARM Tetris",
+    "shortDescription": "Tetris for the Raspberry Pi",
+    "longDescription": [
+      "A version of Tetris written in ARM Assembly for the Raspberry Pi 2 Model B.",
+      "The game includes a driver for the SNES controller, so it feels slightly more authentic! After a specific amount of time, the user gets access to a powerup to clear the screen. In contrast to normal Tetris, the game also ends once a certain number of lines are cleared.",
+      "Tetris was developed in a group as part of CPSC 359 at the University of Calgary",
+      "Running this game requires some extra hardware, so there's no screenshots. Regardless, here's the background and title screen."
+    ],
+    "screenshotCount": 2,
+    "thumbnail": "0",
+    "github": "https://github.com/emilio-alvarez/ARM-Tetris",
+    "tags": ["university", "assembly", "games"]
   }
 ]
