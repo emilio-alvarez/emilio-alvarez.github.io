@@ -5,7 +5,7 @@
     "longDescription": [
       "Twijj is a web platform that allows users to live stream and share content with any number of other viewers online.",
       "Along with streaming or viewing streams, users can also interact with each other through a live chat in each stream, and communicate with the stream host.",
-      "Twijj was developed in a group as part of the SENG 513 course at the University of Calgary."
+      "Twijj was developed in a group as part of SENG 513 at the University of Calgary."
     ],
     "screenshotCount": 5,
     "thumbnail": "1",
@@ -18,11 +18,24 @@
     "longDescription": [
       "Shuttr is an interface concept for a photography social network, allowing users to share and discuss photography.",
       "Users can upload photos, browse photos from other users, and create or participate in discussion posts.",
-      "Shuttr was designed in a group as part of the CPSC 481 course at the University of Calgary."
+      "Shuttr was designed in a group as part of CPSC 481 at the University of Calgary."
     ],
     "screenshotCount": 6,
     "thumbnail": "0",
     "github": "https://github.com/emilio-alvarez/shuttr",
     "tags": ["university", "c#", ".net wpf"]
+  },
+  {
+    "name": "Chatroom",
+    "shortDescription": "Simple Chatroom",
+    "longDescription": [
+      "This is a simple chatroom built with socket.io.",
+      "Once the server is running, users can join and have a quick chat. Users can also execute a couple of commands to change their name and color. As long as the server remains available, users can leave and join the chat as they wish, keeping their preferences.",
+      "This chatroom was developed for an assignment in SENG 513 at the University of Calgary."
+    ],
+    "screenshotCount": 1,
+    "thumbnail": "0",
+    "github": "https://github.com/emilio-alvarez/SimpleChatApp",
+    "tags": ["university", "javascript", "node"]
   }
 ]
