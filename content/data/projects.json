@@ -51,5 +51,16 @@
     "thumbnail": "0",
     "github": "https://github.com/emilio-alvarez/ARM-Tetris",
     "tags": ["university", "assembly", "games"]
+  },
+  {
+    "name": "Brightsquid Data Science",
+    "shortDescription": "ML Research for Brightsquid",
+    "longDescription": [
+      "Brightsquid provides secure communication services between healthcare teams, their patients, and other clinics. Brightsquid is looking to gain insight into the usage of the Secure-Mail platform to accelerate adoption.",
+      "The main objective of the project was to provide examples of how machine learning could be used to analyze the usage data gathered from Secure-Mail. This was a final year software engineering project completed in a group as part of CPSC 594 at the University of Calgary for Brightsquid.",
+      "A proof of concept was developed using Linear, Ridge, and Tree regression models. The proof of concept was developed on the Databricks platform using pandas, scikit learn, and both internal and external data."
+    ],
+    "thumbnail": "0",
+    "tags": ["university", "machine learning", "python"]
   }
 ]
