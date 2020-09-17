@@ -5,13 +5,13 @@
 }
 
 .intro {
-  width: 100%;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
-  position: relative;
+  justify-content: center;
   padding: 1em;
+  position: relative;
+  width: 100%;
 }
 
 .intro__picture {
@@ -19,9 +19,9 @@
 }
 
 .intro__arrow {
+  bottom: 0;
   display: none;
   position: absolute;
-  bottom: 0;
   width: 3em;
 }
 
@@ -33,13 +33,13 @@
 
 .position__header {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .position__company {
-  font-weight: bold;
   font-size: 17px;
+  font-weight: bold;
 }
 
 .position__location {
@@ -52,26 +52,26 @@
 }
 
 .project {
-  padding: 1em;
-  height: 230px;
   color: white;
+  height: 230px;
+  padding: 1em;
 }
 
 .project__content {
-  background-color: var(--custom-primary);
-  display: flex;
   align-items: center;
+  background-color: var(--custom-primary);
+  border-radius: 5px;
+  color: inherit;
+  display: flex;
   flex-direction: column;
   height: 100%;
-  color: inherit;
   position: relative;
-  border-radius: 5px;
 }
 
 .project__content:hover {
-  text-decoration: inherit;
   color: inherit;
   cursor: pointer;
+  text-decoration: inherit;
 }
 
 .project__content:hover .project__overlay {
@@ -79,9 +79,9 @@
 }
 
 .project__thumbnail {
-  max-width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  max-width: 100%;
 }
 
 .project__thumbnailContainer {
@@ -91,23 +91,23 @@
 }
 
 .project__overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
   background-color: var(--custom-primary-light);
-  padding: 1em;
   border-radius: 5px;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.5s ease;
+  width: 100%;
 }
 
 .project__name {
-  padding: 0.5em;
   font-size: 17px;
+  padding: 0.5em;
 }
 
 .project__modal {
@@ -124,8 +124,8 @@
 }
 
 section .container {
-  padding-top: 1.5em;
   padding-bottom: 1.5em;
+  padding-top: 1.5em;
 }
 
 .card-container {
@@ -152,13 +152,13 @@ section .container {
 
 .link--invisible,
 .link--invisible:hover {
-  text-decoration: inherit;
   color: inherit;
+  text-decoration: inherit;
 }
 
 .link--hoverable {
-  text-decoration: inherit;
   color: inherit;
+  text-decoration: inherit;
 }
 
 .link--hoverable:hover {
@@ -189,10 +189,10 @@ section .container {
 /* Desktops */
 @media (min-width: 992px) {
   #headerNav {
-    position: fixed;
-    top: 0;
-    right: 0;
     left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
     z-index: 1030;
   }
 
