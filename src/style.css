@@ -18,10 +18,6 @@
   height: 180px;
 }
 
-.intro__title {
-  margin: 0 0 16px;
-}
-
 .intro__arrow {
   display: none;
   position: absolute;
@@ -123,6 +119,25 @@
   color: white;
 }
 
+.gray-section {
+  background: #f7f7f7;
+}
+
+section .container {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1em;
+}
+
+.card-container > * {
+  width: 100%;
+}
+
 .icon {
   width: 2em;
 }
@@ -148,25 +163,6 @@
 
 .link--hoverable:hover {
   color: inherit;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -1em;
-}
-
-.card-container > * {
-  width: 100%;
-}
-
-.gray-section {
-  background: #f7f7f7;
-}
-
-section .container {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
 }
 
 /* Tablets */
