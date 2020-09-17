@@ -114,6 +114,10 @@
   font-size: 17px;
 }
 
+.project__modal {
+  color: initial;
+}
+
 .footer {
   background-color: var(--custom-primary-dark);
   color: white;
