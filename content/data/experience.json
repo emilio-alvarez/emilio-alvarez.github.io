@@ -22,7 +22,7 @@
     "dateString": "January 2018 - April 2018",
     "link": "https://www.shaw.ca/",
     "details": [
-      "Developed and tested front-end and back-end of a web app used to monitor the Shaw cable plant.",
+      "Developed and tested front-end and back-end of a web app used to monitor the health of the Shaw cable plant.",
       "Improved performance of cable modem data collection by parallelizing the collection process.",
       "Simplified interface by introducing an interactive map giving an overview of cities, hubsites, and nodes.",
       "Updated and created SQL Server stored procedures to accommodate new features."
