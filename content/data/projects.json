@@ -53,7 +53,7 @@
     "tags": ["university", "assembly", "games"]
   },
   {
-    "name": "Brightsquid Data Science",
+    "name": "Brightsquid Usage Analytics",
     "shortDescription": "ML Research for Brightsquid",
     "longDescription": [
       "Brightsquid provides secure communication services between healthcare teams, their patients, and other clinics. Brightsquid is looking to gain insight into the usage of the Secure-Mail platform to accelerate adoption.",
