@@ -1,5 +1,16 @@
 [
   {
+    "title": "Junior Software Developer",
+    "company": "Blackline Safety",
+    "location": "Calgary, AB, CA",
+    "dateString": "November 2020 - Present",
+    "link": "https://www.blacklinesafety.com/",
+    "details": [
+      "TBD: Currently part of the software team, actively participating in the development life cycle."
+    ],
+    "color": "#9f2943"
+  },
+  {
     "title": "Software Developer Intern",
     "company": "Arterys",
     "location": "Calgary, AB, CA",
