@@ -8,7 +8,7 @@
     "details": [
       "Participating remotely in an Agile software development lifecycle which currently practices CI/CD and trunk based development.",
       "Used technologies including Python, Angular, and PHP to deliver features across several parts of the Blackline Safety SaaS platform.",
-      "Updated and developed containerised applications in a Linux environment, which are then deployed on the AWS platform.",
+      "Updated and developed containerised applications in a Linux environment, which were deployed on the AWS platform.",
       "Developed features and fixed bugs to enable remote configuration of G7 EXO area gas monitors.",
       "Assisting in the transition from Python 2.7 to 3.8, fixing and identifying dependency and syntax incompatibilities.",
       "Contributing to the GDPR effort to isolate PII data to separate SQL databases in the European region.",
