@@ -3,16 +3,19 @@
     "title": "Junior Software Developer",
     "company": "Blackline Safety",
     "location": "Calgary, AB, CA",
-    "dateString": "November 2020 - Present",
+    "dateString": "November 2020 - February 2022",
     "link": "https://www.blacklinesafety.com/",
     "details": [
-      "Participating remotely in an Agile software development lifecycle which currently practices CI/CD and trunk based development.",
-      "Used technologies including Python, Angular, and PHP to deliver features across several parts of the Blackline Safety SaaS platform.",
-      "Updated and developed containerised applications in a Linux environment, which were deployed on the AWS platform.",
+      "Participated in an Agile software development process using CI/CD and trunk based development.",
+      "Delivered features across several parts of the Blackline Safety SaaS platform, including features for G7 EXO area gas monitors, utilizing technologies including Python, Angular, and PHP",
+      "Coordinated communications between teams to ensure requirements are correctly updated and addressed while remaining on course to meet deadlines.",
+      "Provided feedback during sprint planning and refinement to ensure requirements included relevant details and work required for a feature was identified.",
+      "Updated and developed containerized applications in a Linux environment, which were deployed on the AWS platform.",
+      "Mentored new hires and interns whenever possible, and created and updated onboarding documentation to ease the transition into the Blackline Safety development process.",
       "Developed features and fixed bugs to enable remote configuration of G7 EXO area gas monitors.",
-      "Assisting in the transition from Python 2.7 to 3.8, fixing and identifying dependency and syntax incompatibilities.",
-      "Contributing to the GDPR effort to isolate PII data to separate SQL databases in the European region.",
-      "Mentored new hires and interns whenever possible to ease the transition into Blackline Safety."
+      "Assisted in the transition from Python 2.7 to 3.8, fixing and identifying dependency and syntax incompatibilities.",
+      "Contributed to the GDPR effort to isolate PII data to separate SQL databases in the European region.",
+      "Participated in software developer interviews and provided feedback on potential hires to ensure team fit and development knowledge."
     ],
     "color": "#9f2943"
   },
