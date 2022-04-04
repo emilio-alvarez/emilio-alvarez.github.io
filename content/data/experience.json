@@ -1,5 +1,16 @@
 [
   {
+    "title": "Software Developer",
+    "company": "Clio",
+    "location": "Calgary, AB, CA",
+    "dateString": "April 2022 - Present",
+    "link": "https://www.clio.com/",
+    "details": [
+      "Currently participating in an agile environment with a team of developers to solve complex problems and provide elegant solutions to Clio customers."
+    ],
+    "color": "#0069d1"
+  },
+  {
     "title": "Junior Software Developer",
     "company": "Blackline Safety",
     "location": "Calgary, AB, CA",
@@ -33,7 +44,7 @@
       "Reviewed and tested code for new features to ensure code and product quality was maintained.",
       "Mentored new interns, passing on knowledge to get them up to speed effectively."
     ],
-    "color": "#1a1e33"
+    "color": "#131d39"
   },
   {
     "title": "Network Sustainment Intern",
